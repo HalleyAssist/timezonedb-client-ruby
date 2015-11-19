@@ -1,4 +1,5 @@
-# Timezonedb Client
+# Timezonedb Client [![Build Status](https://travis-ci.org/Skyscanner/timezonedb-client-ruby.svg?branch=master)](https://travis-ci.org/Skyscanner/timezonedb-client-ruby)
+
 A Ruby client for the timezonedb.com API
 
 ## Getting started
