@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rest-client', '~> 1.8.0'
   s.add_runtime_dependency 'json', '~> 1.8.0'
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rubocop'
