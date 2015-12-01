@@ -1,30 +1,53 @@
 # Timezonedb Client [![Build Status](https://travis-ci.org/Skyscanner/timezonedb-client-ruby.svg?branch=master)](https://travis-ci.org/Skyscanner/timezonedb-client-ruby)
 
-A Ruby client for the timezonedb.com API
+A Ruby client for the [timezonedb.com API](https://timezonedb.com/api)
 
-## Getting started
+## Installation
 
-Add the gem to the Gemfile
-
-```
-gem 'timezonedb-client', '~> 0.1.0', git: 'https://github.com/Skyscanner/timezonedb-client-ruby.git'
-```
-
-Run `bundle install`
-
-Within your app
+Add this line to your application's Gemfile:
 
 ```
-client = Timezonedb::Client.new(ENV['TIMEZONEDB_API_KEY'])
-client.search_by_coords("41.3833", "2.1833")
-=> #<Timezonedb::Client::Response:0x007fbea2530418
- @abbreviation="CET",
- @country_code="ES",
- @dst="0",
- @gmt_offset="3600",
- @message="",
- @timestamp=1447847197,
- @zone_name="Europe/Madrid">
+gem 'timezonedb-client'
+```
+
+And then execute:
+
+```
+$ bundle
+```
+
+Or install it yourself as:
+
+```
+$ gem install timezonedb-client
+```
+
+## Usage
+
+Instantiate a new client object providing a Timezonedb API key. [Register](https://timezonedb.com/register) to get your API key
+
+```
+client = Timezonedb::Client.new(api_key)
+```
+
+Search for the timezone providing latitude and longitude
+
+``` 
+tz = client.search_by_coords("41.3833", "2.1833")
+tz.abbreviation
+=> "CET"
+tz.country_code
+=> "ES"
+tz.dst
+=> "0"
+tz.gmt_offset
+=> "3600"
+tz.message
+=> ""
+tz.timestamp
+=> 1447847197
+tz.zone_name
+=> "Europe/Madrid"
 ```
 
 ## Contributing
