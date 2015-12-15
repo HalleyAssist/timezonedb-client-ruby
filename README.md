@@ -1,6 +1,7 @@
 # Timezonedb Client
 [![Build Status](https://travis-ci.org/Skyscanner/timezonedb-client-ruby.svg?branch=master)](https://travis-ci.org/Skyscanner/timezonedb-client-ruby)
 [![Gem Version](https://badge.fury.io/rb/timezonedb-client.svg)](https://badge.fury.io/rb/timezonedb-client)
+[![Code Climate](https://codeclimate.com/github/Skyscanner/timezonedb-client-ruby/badges/gpa.svg)](https://codeclimate.com/github/Skyscanner/timezonedb-client-ruby)
 
 A Ruby client for the [timezonedb.com API](https://timezonedb.com/api)
 
