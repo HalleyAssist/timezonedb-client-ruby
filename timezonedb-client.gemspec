@@ -37,10 +37,8 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rest-client', '~> 1.8.0'
   s.add_runtime_dependency 'json', '~> 1.8.0'
 
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'pry-byebug'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'rack-test'
-  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'rake', '~> 10.4.2'
+  s.add_development_dependency 'rspec', '~> 3.4.0'
+  s.add_development_dependency 'rack-test', '~> 0.6.3'
+  s.add_development_dependency 'webmock', '~> 1.22.3'
 end
