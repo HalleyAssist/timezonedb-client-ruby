@@ -24,8 +24,8 @@ Gem::Specification.new do |s|
   s.date          = '2015-11-18'
   s.summary       = 'Timezonedb Client'
   s.description   = 'A client for accessing the timezonedb.com API'
-  s.authors       = ['Kostis Dadamis']
-  s.email         = 'kostis.dadamis@skyscanner.net'
+  s.authors       = ['Kostis Dadamis', 'Emili Parreno']
+  s.email         = ['kostis.dadamis@skyscanner.net', 'emili.parreno@skysacnenr.net']
   s.homepage      = 'https://github.com/Skyscanner/timezonedb-client-ruby'
   s.license       = 'Apache License, Version 2.0'
 

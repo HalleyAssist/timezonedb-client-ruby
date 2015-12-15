@@ -24,7 +24,8 @@ $ gem install timezonedb-client
 
 ## Usage
 
-Instantiate a new client object providing a Timezonedb API key. [Register](https://timezonedb.com/register) to get your API key
+Instantiate a new client object providing a Timezonedb API key.
+[Register](https://timezonedb.com/register) to get your API key
 
 ```
 client = Timezonedb::Client.new(api_key)
@@ -32,7 +33,7 @@ client = Timezonedb::Client.new(api_key)
 
 Search for the timezone providing latitude and longitude
 
-``` 
+```
 tz = client.search_by_coords("41.3833", "2.1833")
 tz.abbreviation
 => "CET"
@@ -87,6 +88,7 @@ If you are adding a new file it should have a header like this:
 ```
 
 ## License
+
 Copyright 2015 Skyscanner Limited.
 
 Licensed under the Apache License, Version 2.0 (the "License");
