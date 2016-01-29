@@ -14,24 +14,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require 'timezonedb/client/version'
-require 'timezonedb/client/response'
-require 'timezonedb/client/error'
+require_relative 'client/version'
+require_relative 'client/response'
+require_relative 'client/error'
 
 require 'rest-client'
 
 module Timezonedb
   class Client
-    URL = 'http://api.timezonedb.com'
+    FREE_URL = 'http://api.timezonedb.com'
+    PREMIUM_URL = 'http://vip.timezonedb.com'
 
-    def initialize(api_key)
+    def initialize(api_key, premium = false)
       @api_key = api_key
+      @url = premium ? PREMIUM_URL : FREE_URL
     end
 
     def search_by_coords(latitude, longitude)
       params = { key: @api_key, lat: latitude, lng: longitude, format: 'json' }
 
-      response = RestClient.get URL, params: params
+      response = RestClient.get @url, params: params
       response_hash = JSON.parse(response)
 
       if response_hash['status'] == 'OK'
