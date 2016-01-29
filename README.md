@@ -54,6 +54,14 @@ tz.zone_name
 => "Europe/Madrid"
 ```
 
+If you have premium API access, add `true` as a parameter when instantiating
+the Timezonedb client, otherwise it will use the free plan endpoint.
+
+```
+# will call vip.timezonedb.com instead of api.timezonedb.com
+client = Timezonedb::Client.new(api_key, true)
+```
+
 ## Contributing
 
 We're glad you want to make a contribution!
