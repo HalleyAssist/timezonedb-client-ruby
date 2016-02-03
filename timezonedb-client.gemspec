@@ -21,7 +21,7 @@ require 'timezonedb/client/version'
 Gem::Specification.new do |s|
   s.name          = 'timezonedb-client'
   s.version       = Timezonedb::Client::VERSION
-  s.date          = '2016-02-3'
+  s.date          = '2016-02-03'
   s.summary       = 'Timezonedb Client'
   s.description   = 'A client for accessing the timezonedb.com API'
   s.authors       = ['Kostis Dadamis', 'Emili Parreno']
