@@ -148,7 +148,7 @@ describe Timezonedb::Client do
     context 'when premium plan' do
       let(:url) { 'http://vip.timezonedb.com' }
 
-      subject { Timezonedb::Client.new(api_key, true).search_by_coords(latitude, longitude) }
+      subject { Timezonedb::Client.new(api_key, premium: true).search_by_coords(latitude, longitude) }
 
       context 'and successful request' do
         let(:response_body) { correct_response_body.to_json }

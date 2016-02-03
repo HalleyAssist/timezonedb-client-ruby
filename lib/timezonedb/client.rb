@@ -25,8 +25,9 @@ module Timezonedb
     FREE_URL = 'http://api.timezonedb.com'
     PREMIUM_URL = 'http://vip.timezonedb.com'
 
-    def initialize(api_key, premium = false)
+    def initialize(api_key, options = {})
       @api_key = api_key
+      premium = options[:premium]
       @url = premium ? PREMIUM_URL : FREE_URL
     end
 
