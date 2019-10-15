@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.required_ruby_version = '>= 2.0.0'
 
-  s.add_runtime_dependency 'rest-client', '~> 1.8.0'
+  s.add_runtime_dependency 'rest-client', '~> 2.1.0'
   s.add_runtime_dependency 'json', '~> 2.0.0'
 
   s.add_development_dependency 'rake', '~> 10.4.2'
